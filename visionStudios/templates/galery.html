@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	Galerie
+{% endblock title %}
+{% block content %}
+    <div class="row h-100" style="overflow: hidden;">
+        <button class="futura" onclick="topFunction()" id="myTopBtn" title="Go to top">back to top ────</button>
+        <div class="col-3" style="background-color: #121729; text-align: center;">
+            <img src="{% static 'vs_title.jpg' %}" draggable="false" class="img-fluid" style="width: 80%; margin-top: 10%; margin-left: 10%;  margin-right: 10%;">
+            <pre><p class="futura" style="font-size: 1.5vw; color: #FFFFFF">C  L  U  J    N  A  P  O  C  A   •   R  O  M  A  N  I  A</p></pre>
+            <pre><button class="apply_txt" id="myApplyBtn"> ───  A   P   L   I   C   Ă</button></pre>
+            <pre><button class="catchphrase" id="myCatchPhrase" style="font-size: 5vw; color: #6f7070"> We'll show it</button></pre>
+            <pre><button class="catchphrase" id="myCatchPhrase" style="transform: translateY(200%) rotate(-90deg); color: black; font-size: 2vw;"> Something special for you</button></pre>
+        </div>
+        <div class="col-9" style="text-align: center; margin-bottom: -180%; overflow: hidden">
+            <pre class="futura" style="font-size: 4.0vw; margin-top: 1%; margin-bottom: 0%; padding-bottom: 0%;">G    A    L    E    R    I    E</pre>
+            <pre class="menuitem" onclick="location.href = '/'" style="margin-top: 0%; padding-top: 0%;">
+                M  E
+                        N  U 
+            </pre>
+            {% comment %} IMG 1 LEFT {% endcomment %}
+            <div class="row">
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_01.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            {% comment %} IMG 2 RIGHT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-30%);">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_02.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+            </div>
+            {% comment %} IMG 3 LEFT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-60%);">
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_03.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            {% comment %} IMG 4 RIGHT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-90%);">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_04.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+            </div>
+            {% comment %} IMG 5 LEFT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-120%);">
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_05.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            {% comment %} IMG 6 RIGHT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-150%);">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_06.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+            </div>
+            {% comment %} IMG 7 LEFT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-230%);">
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_07.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            {% comment %} IMG 8 RIGHT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-210%);">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_08.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+            </div>
+            {% comment %} IMG 9 LEFT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-200%);">
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_09.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            {% comment %} IMG 10 RIGHT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-230%);">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_10.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+            </div>
+            {% comment %} IMG 11 LEFT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-300%);">
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_11.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            {% comment %} IMG 12 RIGHT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-280%);">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_12.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+            </div>
+            {% comment %} IMG 13 LEFT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-310%);">
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_13.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            {% comment %} IMG 14 RIGHT {% endcomment %}
+            <div class="row" style="margin-top: 0%; transform: translateY(-340%);">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <img src="{% static 'galerie/g_14.jpg' %}" draggable="false" class="img-fluid inline-photo show-on-scroll" style="margin-left: 5%;">
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+{% endblock content %}
